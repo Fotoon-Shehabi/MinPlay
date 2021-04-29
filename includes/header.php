@@ -2,7 +2,7 @@
 require_once("includes/config.php"); 
 require_once("includes/classes/User.php"); 
 require_once("includes/classes/ButtonMaker.php"); 
-require_once("includes/classes/SubscriptionsProvider.php"); 
+require_once("includes/classes/NavigationMenuProvider.php"); 
 
 
 $loggedInUsername = User::isLoggedIn() ? $_SESSION["loggedIn"] : "";
@@ -29,7 +29,7 @@ $loggedInUser = new User($con, $loggedInUsername);
             </button>
 
             <a class="logoContainer" href="index.php">
-                <img src="assets/images/icons/ITubeLogo.png" title="ITube" alt="Site logo">
+                <img src="assets/images/icons/logo.png" title="MinPlay" alt="Site logo">
             </a>
 
             <div class="searchBarContainer">
